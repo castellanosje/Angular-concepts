@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background: url(../images/bg.jpg) bottom center;
+}
+/*header starts*/
+/*nav*/
+
+.menuPrinc {
+	background: #fff url(../images/navbg.jpg) repeat-x bottom center;
+}
+.nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 12px;
+}
+.navbar {
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	border: 0px;
+	margin-top: -1px;
+	margin-bottom: 0px;
+}
+.navbar-header {
+	border-right: 1px solid #bababa;
+}
+.navbar-brand {
+	height: auto;
+	padding: 25px 15px;
+}
+.nav-justified {
+}
+.nav-justified > li {
+}
+.nav-justified li.home a span {
+	background: url(../images/homeiconhover.png) no-repeat top left;
+	margin: 0px;
+	display: inline-block;
+	width: 25px;
+	height: 21px;
+}
+.nav-justified li.home a span img {
+	margin: 0px
+}
+.nav-justified > li > a {
+	border-right: 1px solid #bababa;
+	border-left: 1px solid rgba(255,255,255,0.6);
+	padding-top: 30px;
+	padding-bottom: 15px;
+	height: 86px;
+	font-family: 'Montserrat', sans-serif;
+	color: #d5d5d5;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: #848383 -1px -1px 0px, #fff 1px 1px 0px;
+}
+.nav > li > a:hover, .nav > li > a:focus, .nav-justified > li > a:hover {
+	background: url(../images/navhover.jpg) repeat-x;
+	color: #766616;
+	text-shadow: #1c1809 -1px -1px 0px, #f4ec31 1px 1px 0px;
+}
+.bordeBajo {
+	display: none;
+	height: 4px;
+	background: #a1760c;
+	position: absolute;
+	left: 0px;
+	bottom: -3px;
+	width: 100%;
+	padding: 0px 1px;
+	z-index: 10;
+}
+.container {
+	padding-right: 58px;
+	padding-left: 58px;
+}
+.icon-bar {
+	background: #ddd;
+}
+.navbar-toggle {
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	margin: 8px
+}
+/*slider*/
+.container-full {
+	background: url(../images/sliderbg.jpg);
+}
+/*fix ol con implementacion de angular*/
+.carousel-indicators li{
+	    margin: 1px 4px;
+}
+.carousel-indicators li.active{
+	    margin: 1px 2px;
+}
+.carousel, .carousel-inner, .item {
+}
+.carousel-inner {
+}
+.carousel-control .custom-chevron-left, .carousel-control .custom-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+	font-size: 53px;
+}
+.carousel-control .custom-chevron-left, .carousel-control .custom-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+	width: 14%;
+	height: auto;
+}
+.custom-chevron-right img, .custom-chevron-left img {
+	width: 80%;
+	height: auto;
+}
+.carouselControlPosition {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	max-height: 109px;
+	background: url(../images/controlbarbg.png)
+}
+.carouselControlWrapper {
+	max-width: 676px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0px auto;
+}
+a.left.carousel-control {
+	background: url(../images/barouselbtnbg.png) no-repeat bottom right;
+	width: 50%;
+	height: 100%;
+	opacity: 1;
+	bottom: 0px;
+	top: auto;
+	position: absolute;
+	background-size: 100% auto;
+}
+a.left.carousel-control .glyphicon {
+	position: absolute;
+	top: auto;
+	bottom: 1%;
+	right: 6%;
+	left: auto;
+}
+a.right.carousel-control {
+	background: url(../images/barouselbtnbgright.png) no-repeat bottom right;
+	width: 50%;
+	height: 100%;
+	opacity: 1;
+	bottom: 0px;
+	top: auto;
+	position: absolute;
+	background-size: 100% auto;
+}
+a.right.carousel-control .glyphicon {
+	position: absolute;
+	left: 6%;
+	right: auto;
+	top: auto;
+	bottom: 1%;
+}
+.carousel-indicators {
+	top: 20px;
+	bottom: auto;
+}
+/*slide blocks config*/
+.carousel-inner .item .rightBlock, .carousel-inner .item .leftBlock {
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.carousel-inner .item .rightBlock img, .carousel-inner .item .leftBlock img {
+	width: 80%
+}
+.carousel-inner .item .rightBlock {
+/*background: red;*/
+}
+.carousel-inner .item .leftBlock {
+/*background: black;*/
+}
+.carousel-inner .item .rightBlock .marginBox, .carousel-inner .item .leftBlock .marginBox {
+	padding: 5%;
+	text-align: center;
+}
+/*main content*/
+.mainContent {
+	padding: 15px 0px 85px 0px;
+	background: #EBEBEB url(../images/maincontbg.jpg) bottom center no-repeat;
+	background-size: 1280px 100%
+}
+.bloque {
+	min-height: 300px;
+}
+.bloque .marginCont {
+	padding-top: 12%;
+	text-align: center;
+}
+.bloque .marginCont img.dummy {
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+}
+/*footer*/
+.footer {
+	background: url(../images/footerbg.png) no-repeat top center;
+	height: 128px;
+	max-height: 128px;
+	width: 100%;
+	margin-top: -23px;
+}
+.centerFooter {
+	text-align: center;
+	padding-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	color: #555;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-shadow: #848383 -1px -1px 0px, #fff 1px 1px 0px;
+}
+.footer .container .footerLinks .rightBlock a, .footer .container .footerLinks .leftBlock a{color:#fff; text-transform:uppercase; font-weight:bold; font-family: 'Montserrat', sans-serif; text-shadow: rgba(0,0,0,0.6) 2px 2px 3px; font-size:12px; }
+.footer .container .footerLinks .leftBlock{ text-align:left;}
+.footer .container .footerLinks .rightBlock{ text-align:right;}
+
+/*media query overwrites*/
+/*carrousel fix specific query*/
+ @media (max-width: 676px) {
+.carouselControlPosition {
+	background: transparent;
+}
+}
+ @media (max-width: 768px) {
+
+
+
+/*menu config*/
+
+.menuPrinc{position:fixed; top:0px; left:0px; width:100%; z-index:1000;}
+
+.respMenuIcon {
+	display: block;
+	padding: 3px 0px;
+	border-bottom: 1px dotted #ddd;
+	background: #004947;
+}
+.navbar-toggle {
+	float: none;
+	margin: 10px auto;
+	display: block;
+	background: #fff;
+}
+.nav-justified > li > a {
+	border-right: 0px;
+	border-left: 0px;
+}
+.navbar-collapse {
+	padding: 0px;
+}
+.navbar .container > .navbar-header {
+	width: 100%;
+	margin: 0px auto;
+	float: none;
+	border-right: 0px;
+}
+#navbar {
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px dotted #ddd;
+}
+.navbar .container {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.container {
+	padding: 0px 15px;
+}
+.navbar-brand {
+	height: auto;
+	padding: 25px 10px;
+}
+/*fix submenu*/
+.open > .dropdown-menu {
+	display: block;
+	position: static;
+	float: none;
+}
+/*slide blocks config*/
+.carousel{margin-top:151px;}
+.carousel-inner .item .rightBlock, .carousel-inner .item .leftBlock {
+	width: 100%;
+	height: auto;
+	float: none;
+}
+.carousel-inner .item .rightBlock .marginBox {
+	padding-bottom: 1%
+}
+.carousel-inner .item .leftBlock .marginBox {
+	padding-top: 1%;
+	padding-bottom: 10%;
+}
+.brandHolder {
+	clear: both;
+	width: 201px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+/*footer config*/
+.footer .container .footerLinks .leftBlock{ text-align:center; padding-top:50px; padding-bottom:10px; border-bottom:1px dotted #fff;}
+.footer .container .footerLinks .rightBlock{ text-align:center; padding-top:10px; padding-bottom:50px;}
+}
+ @media (min-width: 768px) and (max-width :1200px) {
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+	margin-right: 0;
+	margin-left: 0;
+}
+/*fix menu*/
+
+.navbar .container > .navbar-header {
+	width: 280px;
+	margin: 0px auto;
+	float: none;
+	border-right: 0px;
+}
+.navbar-collapse {
+	padding: 0px;
+}
+.navbar .container {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.navbar .container ul {
+	border-top: 1px dotted #ddd;
+}
+.bordeBajo {
+	display: none;
+	height: 4px;
+	background: #a1760c;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	padding: 0px 1px;
+	z-index: 10;
+}
+}
+ @media (min-width: 1200px) {
+.container {
+	width: 1080px;
+}
+}

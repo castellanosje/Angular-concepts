@@ -1,0 +1,45 @@
+<div class="container-full"  ng-show="carouselCtrl.carousel.slides.length"> 
+  <!--inicio-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li ng-repeat="item in carouselCtrl.carousel.slides" data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{ active:$index === 0}"></li>
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" > 
+     
+      <div  ng-repeat="slide in carouselCtrl.carousel.slides" ng-class="{ active:$index === 0}" class="{{slide.slideClass}}" >
+         <!--item start-->
+        <div class="rightBlock">
+          <div class="marginBox"> <img ng-src="{{slide.blocks[0].imgBlock}}" /> </div>
+        </div>
+        <div class="leftBlock">
+          <div class="marginBox"> <img ng-src="{{slide.blocks[1].imgBlock}}" /> </div>
+        </div>
+        <!--item ends--> 
+      </div>
+      
+      
+     
+    </div>
+    <div class="carouselControlPosition" >
+      <div class="carouselControlWrapper" > 
+        <!-- Left and right controls --> 
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> 
+          <span ng-show="carouselCtrl.carousel.slides.length > 1" class="glyphicon custom-chevron-left" aria-hidden="true"> 
+            <img src="images/chevronleft.png" /> 
+          </span> 
+          <span class="sr-only">Previous</span>
+        </a> 
+        <a  class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+          <span ng-show="carouselCtrl.carousel.slides.length > 1" class="glyphicon custom-chevron-right" aria-hidden="true"> 
+            <img src="images/chevronright.png"/> 
+          </span> <span class="sr-only">Next</span> 
+        </a> 
+      </div>
+    </div>
+  </div>
+  <!--cierre--> 
+
+</div>

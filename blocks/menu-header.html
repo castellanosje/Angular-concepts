@@ -1,0 +1,59 @@
+<nav class="navbar  menuPrinc">
+  <div class="container">
+    <!--header and responsive-->
+    <div class="navbar-header"  ng-show="head.brands.length">
+
+      <div class="brandHolder"> 
+
+        <a ng-repeat="brand in head.brands" class="{{brand.brandClass}}" href="{{brand.brandLink}}" >
+          <img ng-src="{{brand.brandSrc}}">
+        </a>
+
+      </div>
+
+<div class="respMenuIcon" ng-show="head.items.length">
+        
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button>
+
+      </div>  
+      
+    </div>
+<!--header ends-->
+
+    <div id="navbar" class="navbar-collapse collapse" ng-show="head.items.length">
+      <ul class="nav nav-justified">
+        <li ng-if="!item.iconSrc.length || !item.submenu.length" ng-repeat="item in head.items" class="{{item.itemClass}}">
+            <!--cuando es sencillo-->
+          <a href="{{item.urlLink}}" ng-hide="item.iconSrc.length || item.submenu.length">
+            {{item.name}}
+          </a>
+            <!--cuando es icono-->
+          <a href="{{item.urlLink}}" ng-show="item.iconSrc.length">
+            <span>
+              <img ng-src="{{item.iconSrc[0]}}" class="homeOff" />
+            </span>
+          </a>
+            <!--cuando es dropDown-->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ng-show="item.submenu.length">national promotions <span class="glyphicon glyphicon-chevron-down"></span></a>
+          <ul class="dropdown-menu">
+            <!--cuando es sencillo-->
+            <li ng-attr-role="{{subItem.attr}}" ng-if="!subItem.header || !subItem.separator" ng-repeat="subItem in item.submenu" class="{{subItem.itemClass}}">
+              <a ng-hide="subItem.header || subItem.separator" href="#">
+                {{subItem.name}}
+              </a>
+              <!--cuando es un header-->
+              <span ng-show="subItem.header">{{subItem.name}}</span>
+              <!--cuando es un separador-->
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
